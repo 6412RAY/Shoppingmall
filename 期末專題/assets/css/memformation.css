@@ -1,0 +1,190 @@
+*{
+    margin: 0;
+    padding: 0;
+    list-style: none;
+}
+
+body{
+    box-sizing: border-box;
+    font-family: "標楷體";
+    background-color: #333;
+}
+
+a {
+    text-decoration: none;
+    color: #26ff93;
+    font-weight: 300;
+}
+
+/*導覽列*/
+.header {
+    background-image: linear-gradient(90deg, #333, #555);
+    width: 350px;
+    margin-left: 77.2%;
+}
+
+.container {
+    display: flex;
+    max-width: 1200px;
+    margin: 0 auto;
+}
+
+.navbar {
+    display: flex;
+    align-items: center;
+    margin: auto;
+}
+
+.indexlink{
+    background: linear-gradient( to right,yellow,#4cd137);
+    background: -webkit-linear-gradient(to right,yellow,#4cd137);
+    background-clip: text;
+    -webkit-background-clip: text;
+    color: transparent;
+}
+.indexitem{
+    flex-grow: 1;
+    padding: 20px;
+    border-bottom: 5px solid transparent;
+    transition: 0.3s;
+}
+.indexitem:hover{
+    border-bottom: 5px solid white;
+}
+
+.shoppingmalllink{
+    color: 	#FF359A;
+}
+.shoppingmallitem{
+    flex-grow: 1;
+    padding: 20px;
+    border-bottom: 5px solid transparent;
+    transition: 0.3s;
+}
+.shoppingmallitem:hover{
+    border-bottom: 5px solid #FF95CA;
+}
+
+.memberlink{
+    color: #0080FF;
+}
+.memberitem {
+    flex-grow: 1;
+    padding: 20px;
+    border-bottom: 5px solid transparent;
+    transition: 0.3s;
+}
+.memberitem:hover {
+    border-bottom: 5px solid #8fc5fa;
+}
+
+.aboutlink{
+    color: #921AFF;
+}
+.aboutitem{
+    flex-grow: 1;
+    padding: 20px;
+    border-bottom: 5px solid transparent;
+    transition: 0.3s;
+}
+.aboutitem:hover{
+    border-bottom: 5px solid #BE77FF;
+}
+
+/*表單*/
+/*會員*/
+.memberbox{
+    margin-top: 50px;
+    margin-right: 100px;
+    margin-left: 200px;
+    margin-bottom: 30px;
+    float: left;
+    font-size: 20px;
+    width: 300px;
+    color: #0080FF;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border: #0080FF 10px solid;
+    padding: 30px 60px;
+    border-radius: 15px;
+    text-shadow: 0 0 0.5em #0080FF;
+    box-shadow: inset 0 0 0.8em #0080FF, 0 0 0.8em #0080FF;
+}
+
+legend{
+    font-size: 50px;
+    text-align: center;
+}
+
+.member{
+    margin-right: 100px;
+    margin-left: 200px;
+    float: left;
+    font-size: 20px;
+    width: 300px;
+    color: #8fc5fa;
+    display: flex;
+    border: #8fc5fa 10px solid;
+    padding: 30px 60px;
+    border-radius: 15px;
+    text-shadow: 0 0 0.5em #8fc5fa;
+    box-shadow: inset 0 0 0.8em #8fc5fa, 0 0 0.8em #8fc5fa;
+    display:none;
+}
+
+.submit-set{
+    background-color: #333;
+    font-size: 20px;
+    color: #8fc5fa;
+    display: inline-block;
+    border: #8fc5fa 5px solid;
+    padding: 10px 20px;
+    border-radius: 10px;
+    text-shadow: 0 0 0.5em #8fc5fa;
+    box-shadow: inset 0 0 0.8em #8fc5fa, 0 0 0.8em #8fc5fa;
+    margin-top: 20px;
+}
+
+.submit-set:hover{
+    background: #8fc5fa;
+    color: #333;
+    text-shadow: 0;
+    cursor: pointer;
+}
+
+/*紀錄*/
+.recordbox{
+    margin-top: 50px;
+    margin-right: 200px;
+    margin-left: 100px;
+    margin-bottom: 30px;
+    float: right;
+    font-size: 20px;
+    width: 300px;
+    color: #0080FF;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border: #0080FF 10px solid;
+    padding: 30px 60px;
+    border-radius: 15px;
+    text-shadow: 0 0 0.5em #0080FF;
+    box-shadow: inset 0 0 0.8em #0080FF, 0 0 0.8em #0080FF;
+}
+
+.record{
+    margin-right: 200px;
+    margin-left: 100px;
+    float: right;
+    font-size: 20px;
+    width: 300px;
+    color: #8fc5fa;
+    display: flex;
+    border: #8fc5fa 10px solid;
+    padding: 30px 60px;
+    border-radius: 15px;
+    text-shadow: 0 0 0.5em #8fc5fa;
+    box-shadow: inset 0 0 0.8em #8fc5fa, 0 0 0.8em #8fc5fa;
+    display:none;
+}
