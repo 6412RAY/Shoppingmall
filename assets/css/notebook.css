@@ -1,0 +1,230 @@
+*{
+    margin: 0;
+    padding: 0;
+    list-style: none;
+}
+
+body{
+    box-sizing: border-box;
+    font-family: "標楷體";
+    background-color: #333;
+}
+
+a {
+    text-decoration: none;
+    color: #26ff93;
+    font-weight: 300;
+}
+
+/*導覽列*/
+.header {
+    background-image: linear-gradient(90deg, #333, #555);
+    width: 350px;
+    margin-left: 77.2%;
+}
+
+.container {
+    display: flex;
+    max-width: 1200px;
+    margin: 0 auto;
+}
+
+.navbar {
+    display: flex;
+    align-items: center;
+    margin: auto;
+}
+
+.indexlink{
+    background: linear-gradient( to right,yellow,#4cd137);
+    background: -webkit-linear-gradient(to right,yellow,#4cd137);
+    background-clip: text;
+    -webkit-background-clip: text;
+    color: transparent;
+}
+.indexitem{
+    flex-grow: 1;
+    padding: 20px;
+    border-bottom: 5px solid transparent;
+    transition: 0.3s;
+}
+.indexitem:hover{
+    border-bottom: 5px solid white;
+}
+
+.shoppingmalllink{
+    color: 	#FF359A;
+}
+.shoppingmallitem{
+    flex-grow: 1;
+    padding: 20px;
+    border-bottom: 5px solid transparent;
+    transition: 0.3s;
+}
+.shoppingmallitem:hover{
+    border-bottom: 5px solid #FF95CA;
+}
+
+.memberlink{
+    color: #0080FF;
+}
+.memberitem {
+    flex-grow: 1;
+    padding: 20px;
+    border-bottom: 5px solid transparent;
+    transition: 0.3s;
+}
+.memberitem:hover {
+    border-bottom: 5px solid #8fc5fa;
+}
+
+.aboutlink{
+    color: #921AFF;
+}
+.aboutitem{
+    flex-grow: 1;
+    padding: 20px;
+    border-bottom: 5px solid transparent;
+    transition: 0.3s;
+}
+.aboutitem:hover{
+    border-bottom: 5px solid #BE77FF;
+}
+
+/*分類欄*/
+header {
+    width: 150px;
+    height: 420px;
+    padding: 30px 60px;
+    border: #FF359A 10px solid;
+    border-radius: 5px;
+    box-shadow: inset 0 0 0.8em #FF359A, 0 0 0.8em #FF359A;
+    background-repeat: no-repeat;
+    position: fixed;
+    background-size: 200px;
+    left: 60px;
+    top: 100px;
+    bottom: 10px;
+    color: #FF95CA;
+    float: left;
+}
+
+.text{
+    width: auto;
+    height: 50px;
+    background-color: #333;
+    line-height: 50px;
+    text-align: center;
+    font-size: 35px;
+    border: #333 5px solid;
+    margin: 30px;
+}
+.text:hover{
+    color: white;
+    border: #FF95CA 5px solid;
+    border-radius: 5px;
+    box-shadow: inset 0 0 0.8em #FF95CA, 0 0 0.8em #FF95CA;
+}
+
+/*內文文字框和內文*/
+.text01{
+    margin-right:100px;
+    margin-left: 200px;
+    margin-bottom: 30px;
+    width: 400px;
+    height: 300px;
+    position: relative;
+    border: 20px solid;
+    border-color: #f5f5dc;
+    border-bottom-width: 20px;
+    background-color: #ffffff;
+    box-shadow: #666 0 0 5px;
+    float: left;
+    color: white;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.text-img-set{
+    position: relative;
+    width: 400px;
+    height: 300px;
+    
+}
+  
+.text-img-set img{
+    display: block;
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
+  
+.text-img-set .text-set{
+    opacity: 0;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    position: absolute;
+    background-color: rgba(0, 0, 0, 0.3);
+    color: #f5f5dc;
+    font-size: 15px;
+    width: 100%;
+    height: 100%;
+    top: 0;
+}
+
+.text-img-set .text-set2{
+    opacity: 0;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    position: absolute;
+    background-color: rgba(0, 0, 0, 0.3);
+    color: white;
+    font-size: 15px;
+    width: 100%;
+    height: 100%;
+    top: 0;
+}
+  
+.text-img-set .text-set:hover{
+    opacity: 1;
+    transition:0.8s;
+}
+
+.text-img-set .text-set2:hover{
+    opacity: 1;
+    transition:0.8s;
+}
+
+
+
+.text01:hover{
+    color: #8B4513;
+    border-color: #ffffff;
+    background-color: #f5f5dc;
+}
+
+.text02{
+    margin-right: 100px;
+    margin-left: 200px;
+    width: 400px;
+    height: 300px;
+    position: relative;
+    border: 20px solid;
+    border-color: #ffffff;
+    border-bottom-width: 20px;
+    background-color: #f5f5dc;
+    box-shadow: #666 0 0 5px;
+    float: left;
+    color: #f5f5dc;
+}
+
+.text02:hover{
+    color: #8B4513;
+    border-color: #f5f5dc;
+    background-color: #ffffff;
+}
