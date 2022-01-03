@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>購物車</title>
+    <link rel="stylesheet" href="assets/css/shoppingcart.css">
+    <script src="https://unpkg.com/vue/dist/vue.min.js"></script>
+</head>
+<body>
+    <div class="header">
+        <div class="container">
+            <nav class="navbar">
+                <a href="index.html" class="indexlink indexitem">首頁</a>
+                <a href="shoppingmall.html" class="shoppingmalllink shoppingmallitem">商城</a>
+                <a href="member.html" class="memberlink memberitem">會員</a>
+                <a href="about.html" class="aboutlink aboutitem">關於我們</a>
+                <a href="shoppingcart.html" class="shoppingcartlink shoppingcartitem">
+                    <img src="assets/img/shopping-cart.png" width="25px">
+                </a>
+            </nav>
+        </div>
+    </div>
+
+    <div class="textbox">
+        <legend>購物車</legend>
+    </div>
+
+    <div class="formbox">
+        <legend style="margin-bottom: 10px;">訂單內容</legend>
+        <div id="app">
+            <div>
+                <div class="item_header">
+                    <div class="item_detail">商品</div>
+                    <div class="price">單價</div>
+                    <div class="count">數量</div> 
+                    <div class="amount">總計</div>
+                    <div class="operate">操作</div>
+                </div>
+                <div v-for="(item, index) in itemList" :key="item.id" >
+                        <div class="item_header item_body">
+                                <div class="item_detail">
+                                    <img v-bind:src="item.imgUrl" alt="">
+                                    <div class="name">{{item.itemName}}</div>
+                                </div>
+                                    
+                                <div class="price"><span>$</span>{{item.price}}</div>
+                                <div class="count">
+                                    <button @click="handleSub(item)">-</button>
+                                    {{item.count}}
+                                    <button @click="handlePlus(item)">+</button>
+                                </div> 
+                                <div class="amount">{{item.price * item.count}}</div>
+                                <div class="operate">
+                                    <button @click="handledelete(index)">刪除</button>
+                                </div>
+                        </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <script src="assets/js/shoppingcart.js"></script>
+</body>
+</html>

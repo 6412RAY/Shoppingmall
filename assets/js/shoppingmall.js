@@ -1,9 +1,8 @@
+/*搜尋欄*/
 (function(document) {
     'use strict';
-  
     // 建立 LightTableFilter
     var LightTableFilter = (function(Arr) {
-  
       var _input;
   
       // 資料輸入事件處理函數

@@ -19,8 +19,8 @@ a {
 /*導覽列*/
 .header {
     background-image: linear-gradient(90deg, #333, #555);
-    width: 350px;
-    margin-left: 77.2%;
+    width: 400px;
+    margin-left: 73.9%;
 }
 
 .container {
@@ -91,6 +91,22 @@ a {
     border-bottom: 5px solid #BE77FF;
 }
 
+.shoppingcartlink{
+    color: #1afd9c;
+}
+.shoppingcartitem{
+    flex-grow: 1;
+    padding-left: 20px;
+    padding-right: 20px;
+    padding-bottom: 10px;
+    padding-top: 20px;
+    border-bottom: 5px solid transparent;
+    transition: 0.3s;
+}
+.shoppingcartitem:hover{
+    border-bottom: 5px solid #96FED1;
+}
+
 /*分類欄*/
 header {
     width: 150px;
@@ -146,7 +162,7 @@ legend{
     width: 700px;
     height: 400px;
     position: relative;
-    background-color: #333;
+    background-color: white;
     border:#FF359A 10px solid;
     border-radius: 5px;
     box-shadow: inset 0 0 0.8em #FF359A, 0 0 0.8em #FF359A;
@@ -249,7 +265,7 @@ legend{
 }
 
 .slider-set:hover span{
-    width: 15%;
+    width: 50%;
     -webkit-transform:scaleY(1);
     -ms-transform:scaleY(1);
     transform:scaleY(1);
@@ -266,3 +282,4 @@ legend{
     color: #FF359A;
     max-height: none;
 }
+

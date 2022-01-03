@@ -19,8 +19,8 @@ a {
 /*導覽列*/
 .header {
     background-image: linear-gradient(90deg, #333, #555);
-    width: 350px;
-    margin-left: 77.2%;
+    width: 400px;
+    margin-left: 73.6%
 }
 
 .container {
@@ -89,6 +89,25 @@ a {
 }
 .aboutitem:hover{
     border-bottom: 5px solid #BE77FF;
+}
+
+.shoppingcartlink{
+    color: #1afd9c;
+}
+.shoppingcartitem{
+    flex-grow: 1;
+    padding-left: 20px;
+    padding-right: 20px;
+    padding-bottom: 10px;
+    padding-top: 20px;
+    border-bottom: 5px solid transparent;
+    transition: 0.3s;
+}
+.shoppingcartitem:hover{
+    border-bottom: 5px solid #96FED1;
+}
+.icon{
+    width: 25px;
 }
 
 /*表單*/
@@ -206,4 +225,9 @@ img{
 
 .ig{
     width: 30px;
+}
+.ig:hover{
+    width: 50px;
+    transition: all 0.6s;
+    transform: scale(1.1);
 }
