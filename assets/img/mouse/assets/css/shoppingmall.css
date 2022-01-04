@@ -1,0 +1,321 @@
+*{
+    margin: 0;
+    padding: 0;
+    list-style: none;
+}
+
+body{
+    box-sizing: border-box;
+    font-family: "標楷體";
+    background-color: #333;
+}
+
+a {
+    text-decoration: none;
+    color: #FF95CA;
+    font-weight: 300;
+}
+
+/*導覽列*/
+.header {
+    background-image: linear-gradient(90deg, #333, #555);
+    width: 400px;
+    margin-left: 73.9%;
+}
+
+.container {
+    display: flex;
+    max-width: 1200px;
+    margin: 0 auto;
+}
+
+.navbar {
+    display: flex;
+    align-items: center;
+    margin: auto;
+}
+
+.indexlink{
+    background: linear-gradient( to right,yellow,#4cd137);
+    background: -webkit-linear-gradient(to right,yellow,#4cd137);
+    background-clip: text;
+    -webkit-background-clip: text;
+    color: transparent;
+}
+.indexitem{
+    flex-grow: 1;
+    padding: 20px;
+    border-bottom: 5px solid transparent;
+    transition: 0.3s;
+}
+.indexitem:hover{
+    border-bottom: 5px solid white;
+}
+
+.shoppingmalllink{
+    color: 	#FF359A;
+}
+.shoppingmallitem{
+    flex-grow: 1;
+    padding: 20px;
+    border-bottom: 5px solid transparent;
+    transition: 0.3s;
+}
+.shoppingmallitem:hover{
+    border-bottom: 5px solid #FF95CA;
+}
+
+.memberlink{
+    color: #0080FF;
+}
+.memberitem {
+    flex-grow: 1;
+    padding: 20px;
+    border-bottom: 5px solid transparent;
+    transition: 0.3s;
+}
+.memberitem:hover {
+    border-bottom: 5px solid #8fc5fa;
+}
+
+.aboutlink{
+    color: #921AFF;
+}
+.aboutitem{
+    flex-grow: 1;
+    padding: 20px;
+    border-bottom: 5px solid transparent;
+    transition: 0.3s;
+}
+.aboutitem:hover{
+    border-bottom: 5px solid #BE77FF;
+}
+
+.shoppingcartlink{
+    color: #1afd9c;
+}
+.shoppingcartitem{
+    flex-grow: 1;
+    padding-left: 20px;
+    padding-right: 20px;
+    padding-bottom: 10px;
+    padding-top: 20px;
+    border-bottom: 5px solid transparent;
+    transition: 0.3s;
+}
+.shoppingcartitem:hover{
+    border-bottom: 5px solid #96FED1;
+}
+
+/*分類欄*/
+header {
+    width: 150px;
+    height: 420px;
+    padding: 30px 60px;
+    border: #FF359A 10px solid;
+    border-radius: 5px;
+    box-shadow: inset 0 0 0.8em #FF359A, 0 0 0.8em #FF359A;
+    background-repeat: no-repeat;
+    position: fixed;
+    background-size: 200px;
+    left: 60px;
+    top: 100px;
+    bottom: 10px;
+    color: #FF95CA;
+    float: left;
+}
+
+.text{
+    width: auto;
+    height: 50px;
+    background-color: #333;
+    line-height: 50px;
+    text-align: center;
+    font-size: 35px;
+    border: #333 5px solid;
+    margin: 30px;
+}
+.text:hover{
+    color: white;
+    border: #FF95CA 5px solid;
+    border-radius: 5px;
+    box-shadow: inset 0 0 0.8em #FF95CA, 0 0 0.8em #FF95CA;
+}
+
+/*搜尋列*/
+.search{
+    color: #FF359A;
+    text-align: center;
+}
+
+/*暢銷欄*/
+legend{
+    font-size: 50px;
+    text-align: center;
+    color: #FF359A;
+    text-shadow: 0 0 0.5em #FF359A;
+}
+
+/*圖片輪播*/
+.slider-set{
+    margin: 30px auto;
+    width: 500px;
+    height: 400px;
+    position: relative;
+    background-color: white;
+    border:#FF359A 10px solid;
+    border-radius: 5px;
+    box-shadow: inset 0 0 0.8em #FF359A, 0 0 0.8em #FF359A;
+}
+
+.slider-set div{
+    position: absolute;
+    top: 0;
+    left: 0;
+    opacity: 0;
+    filter: alpha(opacity=0);
+}
+
+.slider-set div {
+    -webkit-animation: round 25 linear infinite;
+    animation: round 25s linear infinite;
+}
+
+@-webkit-keyframes round {
+    4% {
+    opacity: 1;
+    filter: alpha(opacity=100);
+    /* 0 - 0.5秒 淡入*/
+    }
+
+    20% {
+        opacity: 1;
+        filter: alpha(opacity=100);
+        /* 1- 2.5秒靜止*/
+    }
+    24% {
+        opacity: 0;
+        filter: alpha(opacity=0);
+        /* 4.5-5秒淡出*/
+    }
+}
+
+@keyframes round{
+    4% {
+        opacity: 1;
+        filter: alpha(opacity=100);
+        /* 0 -0.5秒 淡入*/
+    }
+    
+    20% {
+        opacity: 1;
+        filter: alpha(opacity=100);
+        /* 1-2.5秒靜止*/
+    }
+    24% {
+        opacity: 0;
+        filter: alpha(opacity=0);
+        /* 4-5秒淡出*/
+    }
+}
+
+.slider-set div:nth-child(1){
+    -webkit-animation-delay: 0s;
+    animation-delay: 0s;
+}
+
+.slider-set div:nth-child(2){
+    -webkit-animation-delay: 5s;
+    animation-delay: 5s;
+}
+
+.slider-set div:nth-child(3){
+    -webkit-animation-delay: 10s;
+    animation-delay: 10s;
+}
+
+.slider-set div:nth-child(4){
+    -webkit-animation-delay: 15s;
+    animation-delay: 15s;
+}
+
+.slider-set div:nth-child(5){
+    -webkit-animation-delay: 20s;
+    animation-delay: 20s;
+}
+
+/*圖片輪播文字*/
+.slider-set span{
+    color: white;
+    background-color: black;
+    opacity:0.75;
+    position: absolute;
+    left: 0%;
+    top: 360px;
+    width: 400px;
+    height: 25px;
+    font-size: 15px;
+    text-align: center;
+    line-height: 25px;
+    -webkit-transform:scaleY(0);
+    -ms-transform:scaleY(0);
+    transform:scaleY(0);
+    -webkit-transition: all 0.5s ease-in-out;
+    transition: all 0.5s ease-in-out;
+}
+
+.slider-set:hover span{
+    width: 70%;
+    -webkit-transform:scaleY(1);
+    -ms-transform:scaleY(1);
+    transform:scaleY(1);
+}
+.slider_container:hover div {
+    -webkit-animation-play-state: paused;
+    animation-play-state: paused;
+}
+
+/*商品*/
+.test{
+    position: relative;
+    left: 40%;
+    color: #FF359A;
+    max-height: none;
+}
+
+/*星等*/
+.rating {
+    font-size: 0;
+    display: table;
+}
+.rating > label {
+    color: #ddd;
+    float: right;
+}
+.rating > label:before {
+    padding: 5px;
+    font-size: 30px;
+    line-height: 1em;
+    display: inline-block;
+    content: "★";
+}
+.rating > input:checked ~ label,
+.rating:not(:checked) > label:hover,
+.rating:not(:checked) > label:hover ~ label {
+    color: #FFD700;
+}
+.rating > input:checked ~ label:hover,
+.rating > label:hover ~ input:checked ~ label,
+.rating > input:checked ~ label:hover ~ label {
+    opacity: 0.5;
+}
+
+/*底部*/
+.down{
+    margin-top: 10px;
+    height: 70px;
+    background-image: linear-gradient(90deg, #333, #555);
+    opacity:0.75;
+    color: white;
+    text-align: center;
+}

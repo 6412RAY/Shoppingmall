@@ -1,0 +1,182 @@
+*{
+    margin: 0;
+    padding: 0;
+    list-style: none;
+}
+
+body{
+    box-sizing: border-box;
+    font-family: "標楷體";
+    background-color: #333;
+}
+
+a {
+    text-decoration: none;
+    color: #26ff93;
+    font-weight: 300;
+}
+
+/*導覽列*/
+.header {
+    background-image: linear-gradient(90deg, #333, #555);
+    width: 400px;
+    margin-left: 73.9%;
+}
+
+.container {
+    display: flex;
+    max-width: 1200px;
+    margin: 0 auto;
+}
+
+.navbar {
+    display: flex;
+    align-items: center;
+    margin: auto;
+}
+
+.indexlink{
+    background: linear-gradient( to right,yellow,#4cd137);
+    background: -webkit-linear-gradient(to right,yellow,#4cd137);
+    background-clip: text;
+    -webkit-background-clip: text;
+    color: transparent;
+}
+.indexitem{
+    flex-grow: 1;
+    padding: 20px;
+    border-bottom: 5px solid transparent;
+    transition: 0.3s;
+}
+.indexitem:hover{
+    border-bottom: 5px solid white;
+}
+
+.shoppingmalllink{
+    color: 	#FF359A;
+}
+.shoppingmallitem{
+    flex-grow: 1;
+    padding: 20px;
+    border-bottom: 5px solid transparent;
+    transition: 0.3s;
+}
+.shoppingmallitem:hover{
+    border-bottom: 5px solid #FF95CA;
+}
+
+.memberlink{
+    color: #0080FF;
+}
+.memberitem {
+    flex-grow: 1;
+    padding: 20px;
+    border-bottom: 5px solid transparent;
+    transition: 0.3s;
+}
+.memberitem:hover {
+    border-bottom: 5px solid #8fc5fa;
+}
+
+.aboutlink{
+    color: #921AFF;
+}
+.aboutitem{
+    flex-grow: 1;
+    padding: 20px;
+    border-bottom: 5px solid transparent;
+    transition: 0.3s;
+}
+.aboutitem:hover{
+    border-bottom: 5px solid #BE77FF;
+}
+
+.shoppingcartlink{
+    color: #1afd9c;
+}
+.shoppingcartitem{
+    flex-grow: 1;
+    padding-left: 20px;
+    padding-right: 20px;
+    padding-bottom: 10px;
+    padding-top: 20px;
+    border-bottom: 5px solid transparent;
+    transition: 0.3s;
+}
+.shoppingcartitem:hover{
+    border-bottom: 5px solid #96FED1;
+}
+
+/*標題*/
+legend{
+    font-size: 50px;
+    text-align: center;
+    color: #1afd9c;
+    text-shadow: 0 0 0.5em #1AFD9C;
+}
+
+.textbox{
+    font-size: 20px;
+    display: inline-block;
+    border: #1AFD9C 10px solid;
+    padding: 30px 60px;
+    border-radius: 15px;
+    text-shadow: 0 0 0.5em #1AFD9C;
+    box-shadow: inset 0 0 0.8em #1AFD9C, 0 0 0.8em #1AFD9C;
+    position: relative;
+    left: 40.8%;
+}
+
+/*結帳*/
+.formbox{
+    font-size: 20px;
+    width: 1100px;
+    margin: 30px auto;
+    border: #1AFD9C 10px solid;
+    padding: 30px 60px;
+    border-radius: 15px;
+    box-shadow: inset 0 0 0.8em #1AFD9C, 0 0 0.8em #1AFD9C;
+}
+
+/*購物車*/
+.item_header{
+    display: flex;
+    width: 1000px;
+    margin: 0 auto;
+    height: 30px;
+    background-color: #fff;
+    border-radius: 3px;
+    padding-left: 10px;
+}
+.item_header div{
+    width: 200px;
+    color: #888;
+    line-height: 30px;
+}
+.item_header .item_detail{
+    width: 50%;
+}
+.item_body{
+    margin-top: 20px;
+    height: 100px;
+    align-items: center;    
+}
+.item_detail img{
+    width: 80px;
+    margin-top: 20px;
+    float: left;
+}
+.item_detail .name{
+    margin-left: 100px;
+    margin-top: 20px;
+}
+
+/*底部*/
+.down{
+    margin-top: 10px;
+    height: 70px;
+    background-image: linear-gradient(90deg, #333, #555);
+    opacity:0.75;
+    color: white;
+    text-align: center;
+}
