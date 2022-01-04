@@ -46,3 +46,12 @@ function closePop5(){
   let popDiv5=document.getElementById("popDiv5");
   popDiv5.style.display="none";
 }
+
+
+  $(".my-rating").starRating({
+  initialRating: 4,
+  strokeColor: '#894A00',
+  strokeWidth: 10,
+  starSize: 25
+});
+

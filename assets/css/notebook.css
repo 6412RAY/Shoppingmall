@@ -228,7 +228,16 @@ legend{
     height: 300px;
     
 }
-  
+
+.msiimg{
+    position: relative;
+    top: -3%;
+    left: 7%;
+    display: block;
+    width: 340px;
+    object-fit: cover;
+}
+
 .text-img-set .img{
     display: block;
     width: 100%;
