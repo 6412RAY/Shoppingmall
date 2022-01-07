@@ -58,6 +58,39 @@
                         </div>
                 </div>
             </div>
+
+            <div align="center">
+                <input class="submit-set" onclick="popDiv();" type="submit" value="購買">
+            </div>
+        </div>
+        <div id="popDiv">
+            <div class="close">
+                <a href="javascript:void(0)" onclick="closePop()">取消</a>
+            </div>
+            <legend>&emsp;&emsp;確認購買</legend>
+            <div class="box">訂單編號：</div>
+            <div class="box">使用者名稱：</div>
+            <div class="box">價格：</div>
+            <div style="color: white;">
+                <label>付款方式：
+                    <select size="1" name="type">
+                        <option>請選擇</option>
+                        <option>超商付款</option>
+                        <option>ATM轉帳</option>
+                        <option>信用卡</option>
+                    </select>
+                </label>
+            </div>
+            <div class="box">付款方式：</div>
+            <div class="box">手機號碼：</div>
+            <div style="color: white;">
+                <label>
+                    地址：<input type="text" name="mail" value="請輸入地址">
+                </label>
+            </div>
+            <div align="center">
+                <input class="submit-set" type="submit" value="購買">
+            </div>
         </div>
     </div>
     <script src="assets/js/shoppingcart.js"></script>
